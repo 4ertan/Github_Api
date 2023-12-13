@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color1: #ffffdd;
+  --bg2: #61a3ba;
+  --bg1: #ffffdd;
+  --bg_In: #ffffdd;
+  --avatar: #61a3ba;
+  --avatar2: #6baf1d;
+  --card: #ffffdd;
+  --repo: #61a3ba;
+  --userDetail: #007096;
+  --userDetail2: #ffffff;
+  --card_bg1: #d2de32;
+  --card_bg2: #a2c579;
+}
+
+body {
+  background-color: var(--color1);
+  background-image: linear-gradient(315deg, var(--bg1) 0%, var(--bg2) 74%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+input {
+  background-color: var(--bg_In);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+  color: #61a3ba;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+input::placeholder {
+  color: #61a3ba;
+}
+
+input:focus {
+  outline: none;
+}
+
+.card {
+  background-color: var(--card);
+  background-image: linear-gradient(
+    315deg,
+    var(--card_bg1) 0%,
+    var(--card_bg2) 100%
+  );
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 3rem;
+  max-width: 800px;
+}
+.avatar:hover {
+  border: 10px solid var(--avatar2);
+}
+.avatar {
+  border: 10px solid var(--avatar);
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  transition-duration: 1s;
+}
+.user-detail:hover {
+  color: var(--userDetail2);
+}
+.user-detail {
+  color: var(--userDetail);
+  margin-left: 2rem;
+  transition-duration: 1s;
+}
+
+.user-detail h2 {
+  margin-top: 0;
+}
+
+.user-detail ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-detail ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-detail ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+a:hover {
+  background-image: linear-gradient(
+    315deg,
+    var(--avatar2) 90%,
+    var(--card_bg1) 74%
+  );
+}
+.repo {
+  background-color: var(--repo);
+  border-radius: 5px;
+  display: inline-block;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
